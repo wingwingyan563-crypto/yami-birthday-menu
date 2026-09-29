@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Darkness (Yami) Maid Cafe - Seville Branch</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e24;
+            --accent-gold: #ffd700;
+            --accent-red: #ff4757;
+            --text-color: #f1f2f6;
+            --sub-text: #a4b0be;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+            border: 2px solid var(--accent-gold);
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--accent-gold);
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: var(--sub-text);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .story-box {
+            background: rgba(255, 215, 0, 0.05);
+            border: 1px solid var(--accent-gold);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 25px;
+            font-size: 0.88rem;
+            line-height: 1.5;
+            color: #dcdde1;
+            text-align: left;
+        }
+
+        .story-title {
+            color: var(--accent-gold);
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .quote {
+            background: rgba(255, 215, 0, 0.1);
+            border-left: 4px solid var(--accent-gold);
+            padding: 10px;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+            color: #ffeaa7;
+            text-align: left;
+        }
+
+        .menu-section {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            color: var(--accent-gold);
+            border-bottom: 1px solid var(--accent-gold);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .item-name {
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .item-desc {
+            font-size: 0.85rem;
+            color: var(--sub-text);
+            margin-top: 3px;
+        }
+
+        .item-price {
+            color: var(--accent-gold);
+            font-weight: bold;
+            text-align: right;
+            min-width: 110px;
+        }
+
+        /* Secret Menu Section */
+        .secret-container {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px dashed var(--accent-red);
+        }
+
+        .secret-btn {
+            background-color: var(--accent-red);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.4);
+        }
+
+        .secret-btn:hover {
+            transform: scale(1.05);
+            background-color: #ff6b81;
+        }
+
+        #secret-menu {
+            display: none;
+            margin-top: 25px;
+            background: rgba(255, 71, 87, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid var(--accent-red);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .secret-title {
+            color: var(--accent-red);
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Golden Darkness Cafe</h1>
+    <div class="subtitle">The Very First Maid Cafe in Seville • Grand Opening</div>
+
+    <!-- Background Story -->
+    <div class="story-box">
+        <div class="story-title">📖 The Origin Story</div>
+        After failing to assassinate Yuuki Rito, Yami found herself stuck on Earth. To make matters worse, her spaceship ran out of energy, leaving her unable to return home. Forced to adapt, she decided to open Seville's very first maid cafe to recharge her ship.<br><br>
+        Today marks the official Grand Opening, and she is welcoming her very first VIP customer—who happens to be celebrating his 28th birthday! Yami has prepared a special surprise menu just for him.
+    </div>
+
+    <div class="quote">
+        "I hate ecchi customers... but since you are my first VIP on your 28th birthday, I shall grant a special exception today." — Yami
+    </div>
+
+    <!-- Regular Menu -->
+    <div class="menu-section">
+        <div class="section-title">💛 Signature Mains</div>
+        <div class="menu-item">
+            <div>
+                <div class="item-name">Egg Omelette Rice with Tomato Sauce (Omurice)</div>
+                <div class="item-desc">Fluffy egg over savory rice, decorated with a tomato sauce heart. Say "Oishikunare" together!</div>
+            </div>
+            <div class="item-price">1 Kiss</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <div class="item-name">Golden Darkness Curry Rice</div>
+                <div class="item-desc">Rich Japanese curry served with rice and gold-hued melt-in-your-mouth toppings.</div>
+            </div>
+            <div class="item-price">10-sec Hug</div>
+        </div>
+    </div>
+
+    <div class="menu-section">
+        <div class="section-title">🍰 Desserts & Drinks</div>
+        <div class="menu-item">
+            <div>
+                <div class="item-name">Yami's Favorite! Chocolate Taiyaki Platter</div>
+                <div class="item-desc">Warm, rich chocolate-filled fish cakes, hand-fed by your maid to power her ship.</div>
+            </div>
+            <div class="item-price">FREE (28th Bday Special)</div>
+        </div>
+        <div class="menu-item">
+            <div>
+                <div class="item-name">"I Hate Perverts!" Dark Coca-Cola Float</div>
+                <div class="item-desc">Chilled Coca-Cola topped with a scoop of sweet ice cream and a tsundere twist.</div>
+            </div>
+            <div class="item-price">3 Compliments</div>
+        </div>
+    </div>
+
+    <!-- Secret Menu Trigger -->
+    <div class="secret-container">
+        <button class="secret-btn" onclick="unlockSecret()">🔒 Unlock Yami's Secret Birthday Menu 🔞</button>
+
+        <div id="secret-menu">
+            <div class="secret-title">🔞 Late-Night Secret Menu</div>
+            <p style="color: #ff6b81; font-size: 0.85rem; margin-bottom: 20px;">
+                ⚠️ WARNING: Restricted access for the 28th Birthday King only!
+            </p>
+
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">💖 Personal Hand-Feeding & Intimate VIP Care</div>
+                    <div class="item-desc">Enjoy full-range royal treatment served up close by Maid Yami.</div>
+                </div>
+                <div class="item-price">Cost: Inquire Master</div>
+            </div>
+
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">🖤 "Trans-Ability" Full Body Relaxing Massage</div>
+                    <div class="item-desc">A special massage session to melt away all of Master's fatigue.</div>
+                </div>
+                <div class="item-price">Cost: 30-sec Kiss</div>
+            </div>
+
+            <div class="menu-item">
+                <div>
+                    <div class="item-name">🔥 Dark After-Hours: Punishment / Reward Time</div>
+                    <div class="item-desc">"Happy 28th Birthday... don't expect to sleep tonight ♡" Custom roleplay & secret requests.</div>
+                </div>
+                <div class="item-price">Cost: Yourself</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function unlockSecret() {
+        let menu = document.getElementById("secret-menu");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+            alert("✨ Happy 28th Birthday Master! You unlocked the secret menu... Prepare to enjoy tonight's special service ♡");
+        }
+    }
+</script>
+
+</body>
+</html>
